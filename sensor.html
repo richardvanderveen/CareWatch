@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Sensor-page</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/sensor.css">
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="#">
+  <img src="img/logo.jpg" width="140" height="50" alt="">
+</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class=>
+          <a class="nav-link" href="#"><p>Welkom Ms J.Austen</p><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><p>by your sensorpage</p></a>
+        </li>
+
+
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button type="reset" onclick="location.href='user.php'" class="btn btn-outline-light my-2 my-sm-0" type="submit">Back</button>
+      </form>
+    </div>
+  </nav>
+
+
+
+
+  <div class="card-group">
+    <div class="card">
+
+      <div class="card-body">
+        <h6 class="card-title">Heartbeat BPM :</h6>
+        <div id="heartbeat"></div>
+      </div>
+    </div>
+
+
+
+    <div class="card">
+       <div class="card-body">
+        <h6 class="card-title">Temperature in °F :</h6>
+       <div id="temperature"></div>
+       <div class="card-text">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-group">
+  <div class="card">
+  <div class="card-body">
+      <h4 class="card-title">Heartbeat history.
+                              <br>Average:</h4>
+                              <!-- Day Average BPM -->
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#hbDay">Day BPM Average</button>
+
+                              <div id="hbDay" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                    <h1>Day Average</h1>
+                                    <br>00:00-06:00  -  152 BPM
+                                    <br>06:00-09:00  -  153 BPM
+                                    <br>09:00-12:00  -  160 BPM
+                                    <br>12:00-15:00  -  158 BPM
+                                    <br>15:00-18:00  -  156 BPM
+                                    <br>18:00-21:00  -  157 BPM
+                                    <br>21:00-00:00  -  150 BPM
+                                    <br>Day Average  -  150 BPM
+                                    <div class="modal-footer">
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                   </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <br>
+                              <br>
+                              <!-- Week Average BPM -->
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#hbWeek">Week BPM Average</button>
+
+                              <div id="hbWeek" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                    <h1>Week Average</h1>
+                                    <br>Monday     -  152 BPM
+                                    <br>Tuesday    -  153 BPM
+                                    <br>Wednesday  -  160 BPM
+                                    <br>Thursday   -  158 BPM
+                                    <br>Friday     -  156 BPM
+                                    <br>Saturday   -  157 BPM
+                                    <br>Sunday     -  150 BPM
+                                    <br>Week Average  -  150 BPM
+                                    <div class="modal-footer">
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                   </div>
+                                  </div>
+                                </div>
+                              </div>
+<br>
+<br>
+<!-- Month Average BPM -->
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#hbMonth">Month BPM Average</button>
+
+<div id="hbMonth"class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <h1>Month Average</h1>
+      <br>Week 47        -  152 BPM
+      <br>Week 48        -  153 BPM
+      <br>Week 49        -  160 BPM
+      <br>Week 50        -  158 BPM
+      <br>Week 51        -  156 BPM
+      <br>Week 52        -  157 BPM
+      <br>Month Average  -  150 BPM
+      <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+     </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+  <div class="card">
+     <div class="card-body">
+      <h4 class="card-title">Temperature History.
+      <br>per week average:</h4>
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#tmpDay">Day TMP Average</button>
+<div id="tmpDay" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+<h1>Day Average</h1>
+<br>00:00-06:00  -  98,6 °F
+<br>06:00-09:00  -  98,8 °F
+<br>09:00-12:00  -  99.1 °F
+<br>12:00-15:00  -  98.2 °F
+<br>15:00-18:00  -  97,8 °F
+<br>18:00-21:00  -  99.0 °F
+<br>21:00-00:00  -  96,5 °F
+<br>Day Average  -  98,4 °F
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+  </div>
+</div>
+</div>
+</div>
+<br>
+                             <br>
+
+
+                                                           <!-- Week Temp Average-->
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#tmpWeek">Week TMP Average</button>
+<div id="tmpWeek" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      <h1>Week Average</h1>
+      <br>Monday        -  99,0 °F
+      <br>Tuesday       -  98,1 °F
+      <br>Wednesday     -  97,9 °F
+      <br>Thursday      -  98,3 °F
+      <br>Friday        -  99,9 °F
+      <br>Saturday      -  98,7 °F
+      <br>Sunday        -  99,2 °F
+      <br>Week Average  -  99,2 °F
+      <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+     </div>
+    </div>
+  </div>
+</div>
+
+                             <br>
+                             <br>
+                             <!-- Month Temp Average -->
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#tmpMonth">Month TMP Average</button>
+<div id="tmpMonth"class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+ <div class="modal-dialog modal-lg">
+   <div class="modal-content">
+   <h1>Month Average</h1>
+   <br>Week 47        -  99,3 °F
+   <br>Week 48        -  98,9 °F
+   <br>Week 49        -  97,9 °F
+   <br>Week 50        -  98,0 °F
+   <br>Week 51        -  97,3 °F
+   <br>Week 52        -  99,7 °F
+   <br>Month Average  -  97,5 °F
+   <div class="modal-footer">
+         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+  </div>
+ </div>
+</div>
+</div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, tden Popper.js, tden Bootstrap JS -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="./js/heartbeat.js"></script>
+  <script src="./js/temperature.js"></script>
+
+</body>
+
+</html>
