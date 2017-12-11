@@ -48,7 +48,7 @@
 
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <button type="reset" onclick="location.href='index.html'" class="btn btn-outline-light my-2 my-sm-0" type="submit">Logout</button>
+        <button type="reset" onclick="location.href='../index.php'" class="btn btn-outline-light my-2 my-sm-0" type="submit">Logout</button>
       </form>
     </div>
   </nav>
