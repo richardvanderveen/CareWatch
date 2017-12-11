@@ -52,7 +52,8 @@ if (isset($_POST ['submit']))
 
 							{
 								echo "Ingelogd!";
-								exit();
+								$_SESSION['u_id']=$uid;
+								header("Location:../user.php");
 								/*Log in the user here
 								$_SESSION['u_id'] = $row['user_id'];
 								$_SESSION['u_first'] = $row['user_first'];
